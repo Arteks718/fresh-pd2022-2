@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Personal info</legend>
+          <label for="first">First Name</label>
+          <input type="text" name="first" />
+          <br />
+          <label for="last">Label Name</label>
+          <input type="text" name="last" />
+          <br />
+          <label for="birthday">Birthday</label>
+          <input type="datetime-local" name="birthday" id="" />
+          <br />
+          <label for="" style="padding-left: 50px">Gender</label>
+          <br />
+          <label for="male">Male</label>
+          <input type="radio" name="male" id="" />
+          <label for="female">Female</label>
+          <input type="radio" name="female" id="" />
+          <br />
+          <label for="drive">Drive experience</label>
+          <select name="drive" id="">
+            <option value="1" selected>---</option>
+            <option value="2">0-2 года</option>
+            <option value="3">2-10 лет</option>
+            <option value="4">больше 10 лет</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Contacts</legend>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="" />
+          <br />
+          <label for="phone">Phone</label>
+          <input type="number" name="phone" id="" />
+          <br />
+          <label for="address">Address</label>
+          <br />
+          <textarea name="address" id="" cols="30" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Car info</legend>
+          <label for="brand">Brand</label>
+          <select name="brand" id="">
+            <option value="1" selected>---</option>
+            <option value="2">Ford</option>
+            <option value="3">Toyota</option>
+            <option value="4">BMW</option>
+          </select>
+          <br />
+          <label for="model">Model</label>
+          <select name="model" id="">
+            <option value="1" selected>---</option>
+            <option value="2">Mondeo 4</option>
+            <option value="3">Fiesta 1.0</option>
+            <option value="4">RAV 4</option>
+            <option value="5">Camry</option>
+            <option value="6">X5</option>
+            <option value="7">i4</option>
+          </select>
+          <br />
+          <label for="used">Used</label>
+          <input type="checkbox" name="used" id="" />
+          <br />
+          <label for="color">Color</label>
+          <br />
+          <label for="color">Red</label>
+          <input type="radio" name="color" id="" />
+          <label for="color">Black</label>
+          <input type="radio" name="color" id="" />
+          <label for="color">Blue</label>
+          <input type="radio" name="color" id="" />
+          <label for="color">White</label>
+          <input type="radio" name="color" id="" />
+          <label for="color">Grey</label>
+          <input type="radio" name="color" id="" />
+          <br />
+          <label for="price">Price</label>
+          <input
+            type="range"
+            name="used"
+            id="price"
+            min="10"
+            max="100"
+            step="10"
+            list="money"
+          />
+          <datalist id="money">
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist>
+        </fieldset>
+        <button>Cancel</button>
+        <button>Ok</button>
+      </form>
+    </main>
+  </body>
+</html>
