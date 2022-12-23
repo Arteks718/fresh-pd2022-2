@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/form-style.css" />
     <title>Form</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <form action="">
         <fieldset>
           <legend>Personal info</legend>
-          <label for="first">First Name</label>
+          <label for="first" id="lb-first">First Name</label>
           <input type="text" name="first" />
           <br />
           <label for="last">Label Name</label>
@@ -20,12 +21,12 @@
           <label for="birthday">Birthday</label>
           <input type="datetime-local" name="birthday" id="" />
           <br />
-          <label for="" style="padding-left: 50px">Gender</label>
+          <label for="gender" style="padding-left: 50px">Gender</label>
           <br />
-          <label for="male">Male</label>
-          <input type="radio" name="male" id="" />
-          <label for="female">Female</label>
-          <input type="radio" name="female" id="" />
+          <label for="">Male</label>
+          <input type="radio" name="gender" id="" />
+          <label for="">Female</label>
+          <input type="radio" name="gender" id="" />
           <br />
           <label for="drive">Drive experience</label>
           <select name="drive" id="">

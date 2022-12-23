@@ -1,0 +1,6 @@
+input:not([name="first"], [name="last"]) {
+  background-color: yellow;
+}
+form {
+  width: 600px;
+}
