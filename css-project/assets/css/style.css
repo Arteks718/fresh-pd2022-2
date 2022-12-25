@@ -1,0 +1,28 @@
+:root {
+  font-size: 30px;
+  color: blue;
+  --main-bgc: red;
+}
+* {
+  margin: auto;
+}
+h1::first-letter {
+  font-size: 100px;
+  color: green;
+}
+h2::first-letter {
+  color: red;
+}
+p::first-line {
+  font-weight: bold;
+}
+p::selection {
+  color: red;
+}
+h1::before{
+  content: '\2603';
+  color:aliceblue;
+}
+h2::after{
+  content: '\2744';
+}

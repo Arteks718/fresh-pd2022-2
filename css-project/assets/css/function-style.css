@@ -1,0 +1,34 @@
+:root {
+  font-size: 30px;
+  color: blue;
+  --main-bgc: red;
+  --main-width: 500px;
+  --el-number: 3;
+}
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+table,
+thead,
+tbody,
+tfoot {
+  border: 3px solid blue;
+}
+tr,
+th,
+td {
+  border: 3px solid blue;
+}
+table {
+  display: inline-block;
+  width: calc(100% / var(--el-number));
+  font-size: 30px;
+}
+thead {
+  background-color: var(--main-bgc);
+}
+.table-container{
+font-size: 0;
+}
