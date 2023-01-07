@@ -26,3 +26,12 @@ h1::before{
 h2::after{
   content: '\2744';
 }
+.link-container{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.link-container li{
+  display: inline-block;
+  padding: 5px;
+}
