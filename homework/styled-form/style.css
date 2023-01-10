@@ -1,0 +1,82 @@
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+legend {
+  font-size: 20pt;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-item {
+  height: 260px;
+}
+.flex-item label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14pt;
+}
+.flex-item input,
+.flex-item textarea,
+.flex-item select {
+  position: sticky;
+  left: 100%;
+}
+.flex-item input[type="checkbox"] {
+  position: static;
+}
+.flex-item input[type="radio"] {
+  position: static;
+  display: inline;
+}
+
+select {
+  width: 150px;
+}
+datalist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 175px;
+}
+option {
+  padding: 0;
+}
+input[type="range"] {
+  position: static;
+  width: 175px;
+  margin: 0;
+}
+#price {
+  margin: 0;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.text-area{
+  display: flex;
+  flex-direction: row;
+}
+.text-area textarea{
+  margin: 10px 0 0 30px
+}
+.text-area label{
+  padding: 7px 0;
+  align-self: center;
+}
+.flex-button{
+  margin: 25px 0;
+}
+.flex-button button{
+  width: 75px;
+  font-size: 14pt;
+  margin: 0 10px;
+}

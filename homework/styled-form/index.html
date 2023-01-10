@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/form-style.css" />
-    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Styled-Form</title>
   </head>
   <body>
     <main>
       <h1>Home work for CSS flexbox</h1>
-      <div class="flex-container">
-        <form action="">
+      <form action="" class="flex-container">
+        <div class="flex-row">
           <fieldset class="flex-item">
             <legend>Personal info</legend>
             <label for="first" id="lb-first">First Name</label>
             <input type="text" name="first" />
             <br />
-            <label for="last">Label Name</label>
+            <label for="last">Last Name</label>
             <input type="text" name="last" />
             <br />
             <label for="birthday">Birthday</label>
-            <input type="datetime-local" name="birthday" id="" />
+            <input id="party" type="datetime-local" name="partydate" />
             <br />
-            <label for="gender" style="padding-left: 50px">Gender</label>
-            <br />
-            <label for="">Male</label>
-            <input type="radio" name="gender" id="" />
-            <label for="">Female</label>
-            <input type="radio" name="gender" id="" />
-            <br />
+            <div class="space-between">
+              <label for="gender">Gender</label>
+              <div>
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="" />
+              </div>
+              <div>
+                <label for="">Female</label>
+                <input type="radio" name="gender" id="" />
+              </div>
+            </div>
             <label for="drive">Drive experience</label>
             <select name="drive" id="">
-              <option value="1" selected>---</option>
-              <option value="2">0-2 года</option>
-              <option value="3">2-10 лет</option>
-              <option value="4">больше 10 лет</option>
+              <option value="1" selected disabled>---</option>
+              <option value="2">expert</option>
+              <option value="3">more than 10</option>
+              <option value="4">5-10</option>
+              <option value="5">2-5</option>
+              <option value="6">less than 2</option>
+              <option value="7">beginner</option>
             </select>
           </fieldset>
-          <fieldset>
+          <fieldset class="flex-item">
             <legend>Contacts</legend>
             <label for="email">Email</label>
             <input type="email" name="email" id="" />
@@ -46,15 +53,16 @@
             <label for="phone">Phone</label>
             <input type="number" name="phone" id="" />
             <br />
-            <label for="address">Address</label>
-            <br />
-            <textarea name="address" id="" cols="30" rows="5"></textarea>
+            <div class="text-area">
+              <label for="address">Address</label>
+              <textarea name="address" id="" cols="21" rows="2"></textarea>
+            </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="flex-item">
             <legend>Car info</legend>
             <label for="brand">Brand</label>
             <select name="brand" id="">
-              <option value="1" selected>---</option>
+              <option value="1" selected disabled>---</option>
               <option value="2">Ford</option>
               <option value="3">Toyota</option>
               <option value="4">BMW</option>
@@ -62,7 +70,7 @@
             <br />
             <label for="model">Model</label>
             <select name="model" id="">
-              <option value="1" selected>---</option>
+              <option value="1" selected disabled>---</option>
               <option value="2">Mondeo 4</option>
               <option value="3">Fiesta 1.0</option>
               <option value="4">RAV 4</option>
@@ -73,8 +81,6 @@
             <br />
             <label for="used">Used</label>
             <input type="checkbox" name="used" id="" />
-            <br />
-            <label for="color">Color</label>
             <br />
             <label for="color">Red</label>
             <input type="radio" name="color" id="" />
@@ -87,33 +93,34 @@
             <label for="color">Grey</label>
             <input type="radio" name="color" id="" />
             <br />
-            <label for="price">Price</label>
+            <label for="" id="price">Price</label>
+            <br />
             <input
               type="range"
               name="used"
               id="price"
               min="10"
-              max="100"
+              max="80"
               step="10"
               list="money"
             />
             <datalist id="money">
-              <option value="10"></option>
-              <option value="20"></option>
-              <option value="30"></option>
-              <option value="40"></option>
-              <option value="50"></option>
-              <option value="60"></option>
-              <option value="70"></option>
-              <option value="80"></option>
-              <option value="90"></option>
-              <option value="100"></option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+              <option value="70">70</option>
+              <option value="80">80</option>
             </datalist>
           </fieldset>
+        </div>
+        <div class="flex-button">
           <button>Cancel</button>
           <button>Ok</button>
-        </form>
-      </div>
+        </div>
+      </form>
     </main>
   </body>
 </html>
